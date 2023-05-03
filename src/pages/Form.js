@@ -7,7 +7,7 @@ const Form = (props) => {
 
     const currentPost = useMemo(() => props.posts.find(post => {
         console.log(post.id, params.id)
-        return post.id == params.id
+        return post.id === parseInt(params.id)
     }), [params.id, props.posts])
 
     const [formData, setFormData] = useState(
