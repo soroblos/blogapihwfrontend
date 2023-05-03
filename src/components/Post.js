@@ -7,14 +7,6 @@ const divStyle = {
     width: '69%'
 }
 
-const titleStyle = {
-    color: 'black'
-}
-
-const detailStyle = {
-    color: 'black'
-}
-
 const Post = ({ post, deleteBlog }) => {
     const navigate = useNavigate()
     const handleDelete = (event) => {
